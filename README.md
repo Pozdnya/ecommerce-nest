@@ -113,8 +113,49 @@ ConfigModule.forRoot({
 });
 ```
 
+## 6. Why This Architecture Was Chosen
+
+This architecture was intentionally designed to:
+
+- **avoid tightly coupled code,**
+
+- **minimize future refactoring,**
+
+- **clearly express intent and responsibility,**
+
+- **align with real-world backend team practices.**
+
+Even at an early stage, the structure reflects production-oriented thinking rather than a quick prototype.
+
+## 7. Future Improvements
+
+The current architecture allows easy extension in the future, such as:
+
+- **adding new feature modules,**
+
+- **introducing database modules,**
+
+- **implementing authentication and authorization,**
+
+- **adding logging and observability,**
+
+- **extending configuration into domain-specific configs.**
+
 
 ## Project setup
+
+Requirements
+
+  -**Node.js (LTS version)**
+  -**npm or yarn**
+
+```bash
+$ fit clone git@github.com:Pozdnya/ecommerce-nest.git
+```
+
+```bash
+$ cd ecommers-nest
+```
 
 ```bash
 $ npm install
@@ -123,14 +164,11 @@ $ npm install
 ## Compile and run the project
 
 ```bash
-# development
+# production
 $ npm run start
 
-# watch mode
+# development mode
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 
 
